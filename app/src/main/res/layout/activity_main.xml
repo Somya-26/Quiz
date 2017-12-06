@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.userpc.quiz.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/textViews"
+            android:text="Part of a database that holds only one type of information is" />
+         <RadioGroup
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+        <RadioButton
+            style="@style/radioButton"
+            android:text="Records" />
+
+        <RadioButton
+            style="@style/radioButton"
+            android:id="@+id/field_option"
+            android:text="Field" />
+
+        <RadioButton
+            style="@style/radioButton"
+            android:text="Reports" />
+
+        <RadioButton
+            style="@style/radioButton"
+            android:text="Files" />
+         </RadioGroup>
+
+
+        <TextView
+            style="@style/textViews"
+            android:text="'.MPG' extension refers usually to what kind of file? " />
+         <RadioGroup
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+        <RadioButton
+            style="@style/radioButton"
+            android:text="WordPerfect Document file" />
+
+        <RadioButton
+            style="@style/radioButton"
+            android:text="MS Office document" />
+
+        <RadioButton
+            style="@style/radioButton"
+            android:id="@+id/movie_option"
+            android:text="Animation/movie file" />
+
+        <RadioButton
+            style="@style/radioButton"
+            android:text="Image file" />
+         </RadioGroup>
+        <TextView
+            style="@style/textViews"
+            android:text="What can be extension of image file?" />
+        <CheckBox
+            style="@style/radioButton"
+            android:id="@+id/jpeg_option"
+            android:text=".jpeg" />
+
+        <CheckBox
+            style="@style/radioButton"
+            android:id="@+id/jpg_option"
+            android:text=".jpg" />
+
+        <CheckBox
+            style="@style/radioButton"
+            android:id="@+id/png_option"
+            android:text=".png" />
+
+        <CheckBox
+            style="@style/radioButton"
+            android:text=".doc" />
+
+
+        <TextView
+            style="@style/textViews"
+            android:text="How many bits is a byte? " />
+
+        <EditText
+            android:id="@+id/bit_text"
+            style="@style/editText"
+             />
+
+        <TextView
+            style="@style/textViews"
+            android:text="What are rows of a relation called in database?" />
+
+        <EditText
+            android:id="@+id/row_text"
+            style="@style/editText"
+             />
+        <TextView
+            style="@style/textViews"
+            android:text="'OS' computer abbreviation usually stands for " />
+
+        <EditText
+            android:id="@+id/os_text"
+            style="@style/editText"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="125dp"
+            android:textColor="@android:color/white"
+            android:onClick="countScore"/>
+            </LinearLayout>
+</ScrollView>
